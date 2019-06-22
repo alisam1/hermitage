@@ -294,7 +294,8 @@ template {
 
 .data__info {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 30px; }
 
 .data__sidebar {
   font-family: "OpenSans-Light";
@@ -343,7 +344,8 @@ template {
 .results__info {
   width: 80%;
   margin: 0 auto;
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 30px; }
 
 .results__sidebar {
   font-family: "OpenSans-Light";
