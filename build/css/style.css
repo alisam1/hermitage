@@ -288,7 +288,9 @@ template {
   font-size: 52px;
   line-height: 68px;
   text-align: center;
-  color: #000; }
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 40px; }
 
 .data__info {
   width: 80%;
@@ -320,15 +322,28 @@ template {
   line-height: 68px;
   text-align: center;
   color: #000;
-  margin-bottom: 20px; }
+  margin-top: 30px;
+  margin-bottom: 40px; }
+
+.results__line {
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  text-align: center; }
+
+.results__line img {
+  text-align: center;
+  padding-top: 70px; }
 
 .results__all {
   background-color: #fcd3ca; }
+  .results__all--second {
+    background-color: #dde6e6; }
 
 .results__info {
   width: 80%;
   margin: 0 auto;
-  padding-top: 30px; }
+  padding-top: 50px; }
 
 .results__sidebar {
   font-family: "OpenSans-Light";
@@ -340,7 +355,7 @@ template {
   padding: 10px;
   padding-bottom: 20px;
   margin-left: 15px;
-  margin-top: 12px;
+  margin-top: 30px;
   float: right; }
 
 .results__text {
