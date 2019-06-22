@@ -1,0 +1,39 @@
+.data__title
+{
+  font-family: $font-family-bold;
+  font-size: 52px;
+  line-height: 68px;
+  text-align: center;
+  color: #000;
+}
+
+.data__info
+{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.data__sidebar
+{
+    font-family: $font-family-light;
+    color: #000;
+    font-size: 28px;
+    line-height: 1.35;
+    border-top: 2px solid #000;
+    width: 370px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-left:15px;
+    margin-top: 10px;
+    float: right;
+
+}
+
+.data__text
+{
+  font-family: $font-family-light;
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
