@@ -1,0 +1,151 @@
+.materials__title
+{
+  font-family: $font-family-bold;
+  font-size: 52px;
+  line-height: 68px;
+  text-align: center;
+  color: #000;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+
+.materials__info
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.materials__card
+{
+  width: 90%;
+  height: 420px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+  &--visual
+  {
+    background-image: url("../img/visual.png")
+  }
+  &--int
+  {
+    background-image: url("../img/int.png")
+  }
+  &--art
+  {
+    background-image: url("../img/art.png")
+  }
+  &--people
+  {
+    background-image: url("../img/people.png")
+  }
+  &--city
+  {
+    background-image: url("../img/city.png")
+  }
+}
+
+
+.materials__about
+{
+  width: 450px;
+  font-family: $font-family-bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000;
+  padding-top: 70px;
+}
+
+.materials__description
+{
+  width: 450px;
+  font-family: $font-family;
+  font-size: 23px;
+  line-height: 30px;
+  color: #000;
+
+}
+
+.materials__card--visual .materials__about
+{
+  font-size: 36px;
+  margin-left: 110px;
+}
+
+.materials__card--visual .materials__description
+{
+  margin-left: 110px;
+}
+
+.materials__card--visual a
+{
+  margin-left: 430px;
+}
+
+.materials__card--int .materials__about
+{
+  text-align: right;
+  margin-left: 402px;
+}
+
+.materials__card--int .materials__description
+{
+  text-align: right;
+  margin-left: 402px;
+  margin-bottom: 40px;
+}
+
+.materials__card--int a
+{
+  margin-left: 745px;
+}
+
+
+.materials__card--art .materials__about
+{
+  margin-left: 110px;
+}
+
+.materials__card--art .materials__description
+{
+  margin-left: 110px;
+}
+
+.materials__card--art a
+{
+  margin-left: 350px;
+}
+
+.materials__card--people .materials__about
+{
+  text-align: right;
+  margin-left: 395px;
+}
+
+.materials__card--people .materials__description
+{
+  text-align: right;
+  margin-left: 395px;
+  margin-bottom: 40px;
+}
+
+.materials__card--people a
+{
+  margin-left: 745px;
+}
+
+.materials__card--city .materials__about
+{
+  margin-left: 110px;
+}
+
+.materials__card--city .materials__description
+{
+  margin-left: 110px;
+  margin-bottom: 40px;
+}
+
+.materials__card--city a
+{
+  margin-left: 300px;
+}
