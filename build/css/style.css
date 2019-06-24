@@ -471,6 +471,80 @@ template {
 .materials__card--city a {
   margin-left: 300px; }
 
+.comands__title {
+  font-family: "OpenSans-Bold";
+  font-size: 52px;
+  line-height: 68px;
+  text-align: center;
+  color: #000;
+  margin-top: 70px;
+  margin-bottom: 70px; }
+
+.comands__info {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.comands__card {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.comands_img {
+  text-align: center; }
+
+.comands_img img {
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-filter: gray;
+          filter: gray;
+  /* IE 6-9 */
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  text-align: center; }
+
+.comands_img img:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none;
+  /* IE 6-9 */ }
+
+.comands__name {
+  font-family: "OpenSans-Bold";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center; }
+
+.comands__description {
+  font-family: "OpenSans-Light";
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center; }
+
+.comands__description span {
+  display: block; }
+
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensans/opensans.woff2") format("woff2"), url("../fonts/opensans/opensans.woff") format("woff"), url("../fonts/opensans/opensans.ttf") format("truetype");
