@@ -368,6 +368,56 @@ template {
   line-height: 30px;
   padding-bottom: 30px; }
 
+.materials__card--visual a {
+  text-decoration: none;
+  cursor: pointer; }
+
+.materials__card--visual a:hover {
+  background: rgba(120, 117, 235, 0.9);
+  position: absolute;
+  width: 1000px;
+  margin-left: -0px;
+  margin-top: 0px;
+  height: 420px;
+  opacity: 1;
+  color: #fff;
+  -webkit-transition: linear 0.7s;
+  transition: linear 0.7s;
+  border-radius: 4px; }
+
+.materials__card--visual a:hover .materials__about {
+  color: #fff;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+
+.materials__card--visual a:hover .materials__description {
+  color: #fff;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+
+.materials__card--int a {
+  text-decoration: none;
+  cursor: pointer; }
+
+.materials__card--int a:hover {
+  background: rgba(1, 138, 140, 0.9);
+  position: absolute;
+  width: 1000px;
+  margin-left: -0px;
+  margin-top: 0px;
+  height: 420px;
+  opacity: 1;
+  color: #fff;
+  -webkit-transition: linear 0.7s;
+  transition: linear 0.7s;
+  border-radius: 4px; }
+
+.materials__card--int a:hover .materials__about {
+  color: #fff;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+
+.materials__card--int a:hover .materials__description {
+  color: #fff;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+
 .materials__title {
   font-family: "OpenSans-Bold";
   font-size: 52px;
@@ -411,12 +461,29 @@ template {
   color: #000;
   padding-top: 70px; }
 
+.materials__about a {
+  width: 450px;
+  font-family: "OpenSans-Bold";
+  font-size: 40px;
+  line-height: 50px;
+  color: #000;
+  padding-top: 70px;
+  text-decoration: none; }
+
 .materials__description {
   width: 450px;
   font-family: "OpenSans";
   font-size: 23px;
   line-height: 30px;
   color: #000; }
+
+.materials__description a {
+  width: 450px;
+  font-family: "OpenSans";
+  font-size: 23px;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none; }
 
 .materials__card--visual .materials__about {
   font-size: 36px;
@@ -481,7 +548,7 @@ template {
   margin-bottom: 70px; }
 
 .comands__info {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,7 +559,8 @@ template {
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-bottom: 70px; }
 
 .comands__card {
   width: 250px;
@@ -532,14 +600,14 @@ template {
 
 .comands__name {
   font-family: "OpenSans-Bold";
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 28px;
   text-align: center; }
 
 .comands__description {
   font-family: "OpenSans-Light";
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 28px;
   text-align: center; }
 
 .comands__description span {
@@ -580,7 +648,7 @@ template {
 
 .main-footer {
   width: 100%;
-  height: 350px;
+  height: 450px;
   background-color: #2a7a75;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,11 +667,21 @@ template {
   text-align: center;
   padding-top: 40px; }
 
+.main-footer__info {
+  width: 700px;
+  font-family: "OpenSans";
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px; }
+
 .main-footer__attention {
   width: 500px;
   font-family: "OpenSans";
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 26px;
   color: #fff;
   text-align: center;
   margin: 0 auto;
