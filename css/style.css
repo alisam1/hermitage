@@ -245,9 +245,21 @@ template {
 .top-content {
   width: 100%;
   height: 800px;
+  background-blend-mode: multiply;
   background-image: url("../img/main_page.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(121, 121, 121, 0.5);
   margin-top: -51px;
   z-index: 9998; }
+  .top-content--patterns {
+    background-blend-mode: multiply;
+    background-image: url("../img/blueplot.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(121, 121, 121, 0.5); }
 
 .top-content__title {
   font-family: "OpenSans-Bold";
@@ -381,8 +393,8 @@ template {
   height: 420px;
   opacity: 1;
   color: #fff;
-  -webkit-transition: linear 0.7s;
-  transition: linear 0.7s;
+  -webkit-transition: linear 0.6s;
+  transition: linear 0.6s;
   border-radius: 4px; }
 
 .materials__card--visual a:hover .materials__about {
@@ -406,8 +418,8 @@ template {
   height: 420px;
   opacity: 1;
   color: #fff;
-  -webkit-transition: linear 0.7s;
-  transition: linear 0.7s;
+  -webkit-transition: linear 0.6s;
+  transition: linear 0.6s;
   border-radius: 4px; }
 
 .materials__card--int a:hover .materials__about {
@@ -646,6 +658,171 @@ template {
 .attention__img img {
   width: 150px; }
 
+.colors__title {
+  font-family: "OpenSans-Bold";
+  font-size: 52px;
+  line-height: 68px;
+  text-align: center;
+  color: #000;
+  margin-top: 50px;
+  margin-bottom: 60px; }
+
+.colors__description {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "OpenSans";
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 100px; }
+
+.colors__img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .colors__img--color {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 30px; }
+
+.left {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px; }
+
+.left__blue {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-bottom: 30px; }
+
+.left img {
+  width: 100%;
+  height: auto; }
+
+.right img {
+  width: 100%;
+  height: auto; }
+
+.colors__all {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.colors__info {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "OpenSans-Light";
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 30px; }
+
+.left-block {
+  width: 50%;
+  margin-top: 0; }
+
+.right-block {
+  width: 45%; }
+
+.left-block img {
+  height: 645px; }
+
+.right-block img {
+  height: 320px; }
+
+.center {
+  width: 98%; }
+
+.center img {
+  width: 100%;
+  height: auto; }
+
+.quote {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 50px; }
+
+.quote__title {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "OpenSans-Bold";
+  font-size: 32px;
+  line-height: 42px;
+  text-align: left;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+.quote__description {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "OpenSans-Light";
+  color: #000;
+  font-size: 20px;
+  line-height: 30px; }
+
+.content {
+  margin-bottom: 70px; }
+
+.content__title {
+  font-family: "OpenSans-Bold";
+  font-size: 52px;
+  line-height: 68px;
+  text-align: center;
+  color: #000;
+  margin-top: 50px;
+  margin-bottom: 60px; }
+
+.content__description {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "OpenSans";
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 100px; }
+
+.content__description span {
+  font-family: "OpenSans-Bold-Italic"; }
+
+.content__img {
+  margin-bottom: 50px; }
+
+.content__img img {
+  width: 100%;
+  height: auto; }
+
+.content__info {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "OpenSans-Light";
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 30px; }
+
+.content__info span {
+  font-family: "OpenSans-Bold"; }
+
 .main-footer {
   width: 100%;
   height: 450px;
@@ -721,5 +898,11 @@ template {
 @font-face {
   font-family: "OpenSans-Bold";
   src: url("../fonts/opensans/opensansbold.woff2") format("woff2"), url("../fonts/opensans/opensansbold.woff") format("woff"), url("../fonts/opensans/opensansbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSans-Bold-Italic";
+  src: url("../fonts/opensans/opensansbolditalic.woff2") format("woff2"), url("../fonts/opensans/opensansbolditalic.woff") format("woff"), url("../fonts/opensans/opensansbolditalic.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
