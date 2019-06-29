@@ -1,0 +1,60 @@
+.content
+{
+  margin-bottom: 70px;
+}
+
+.content__title
+{
+  font-family: $font-family-bold;
+  font-size: 52px;
+  line-height: 68px;
+  text-align: center;
+  color: #000;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.content__description
+{
+  width: 80%;
+  margin: 0 auto;
+  font-family: $font-family;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.content__description span
+{
+  font-family: $font-family-bold-italic;
+}
+
+.content__img
+{
+  margin-bottom: 50px;
+}
+
+.content__img img
+{
+  width: 100%;
+  height: auto;
+}
+
+
+.content__info
+{
+    width: 80%;
+    margin: 0 auto;
+    font-family: $font-family-light;
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.content__info span
+{
+  font-family: $font-family-bold;
+}

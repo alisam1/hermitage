@@ -9,6 +9,8 @@
 @import "blocks/materials.scss";
 @import "blocks/comands.scss";
 @import "blocks/attention.scss";
+@import "blocks/colors.scss";
+@import "blocks/content.scss";
 @import "blocks/footer.scss";
 
 
@@ -36,6 +38,15 @@
     src: url("../fonts/opensans/opensansbold.woff2") format('woff2'),
          url("../fonts/opensans/opensansbold.woff") format('woff'),
          url("../fonts/opensans/opensansbold.ttf") format('truetype');
+      font-weight: 700;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: "OpenSans-Bold-Italic";
+    src: url("../fonts/opensans/opensansbolditalic.woff2") format('woff2'),
+         url("../fonts/opensans/opensansbolditalic.woff") format('woff'),
+         url("../fonts/opensans/opensansbolditalic.ttf") format('truetype');
       font-weight: 700;
       font-style: normal;
   }
