@@ -686,9 +686,8 @@ template {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   .colors__img--color {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -736,16 +735,16 @@ template {
   margin-top: 0; }
 
 .right-block {
-  width: 45%; }
+  width: 50%; }
 
 .left-block img {
-  height: 645px; }
+  height: auto; }
 
 .right-block img {
-  height: 320px; }
+  height: auto; }
 
 .center {
-  width: 98%; }
+  width: 100%; }
 
 .center img {
   width: 100%;
