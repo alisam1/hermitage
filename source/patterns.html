@@ -32,15 +32,11 @@
      <div class="colors">
        <div class="container">
           <div class="colors__title">Цветовые паттерны</div>
-          <div class="colors__description">Используя инструменты лаборатории культурной аналитики (Cultural Analytics Lab <a href="">http://lab.culturalanalytics.info/</a>), мы распределили фотографии по их основному цвету.</div>
+          <div class="colors__description">Используя инструменты лаборатории культурной аналитики (<a href="http://lab.culturalanalytics.info/">Cultural Analytics Lab</a>), мы распределили фотографии по их основному цвету.</div>
       </div>
       <div class="colors__img">
-        <div class="right">
-          <img src="img/whiteplot.jpg" alt="">
-        </div>
-        <div class="left">
-          <img class="left__blue" src="img/blueplot.jpg" alt="">
-          <img src="img/yellowplot.jpg" alt="">
+        <div id="ex3" class="zoom">
+          <img src="img/whiteplot_1.jpg" alt="">
         </div>
       </div>
       <div class="container">
@@ -52,11 +48,11 @@
 
         <div class="colors__img colors__img--color">
           <div class="right right-block">
-            <img src="img/blue_hue.jpg" alt="">
-            <img src="img/red.jpeg" alt="">
+            <img src="img/blue_hue.jpg" data-action="zoom" alt="">
+            <img src="img/red.jpeg" data-action="zoom" alt="">
           </div>
           <div class="left left-block">
-            <img src="img/brownish_hue.jpg" alt="">
+            <img src="img/brownish.png" alt="">
           </div>
         </div>
 
@@ -119,5 +115,18 @@
      </div>
    </footer>
 
+
+   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+   	<script src='js/jquery.zoom.js'></script>
+  <script src="js/zoom.js"></script>
+   	<script>
+   		$(document).ready(function(){
+   			$('#ex1').zoom();
+   			$('#ex2').zoom({ on:'grab' });
+   			$('#ex3').zoom({ on:'click' });
+   			$('#ex4').zoom({ on:'toggle' });
+   		});
+   	</script>
   </body>
 </html>
