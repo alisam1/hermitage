@@ -7,7 +7,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(121, 121, 121, 0.5);
+  background-color: rgba(121, 121, 121, 0.6);
   margin-top: -51px;
   z-index: 9998;
   &--patterns
@@ -17,7 +17,16 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(121, 121, 121, 0.5);
+    background-color: rgba(121, 121, 121, 0.6);
+  }
+  &--interior
+  {
+    background-blend-mode: multiply;
+    background-image: url("../img/int.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(121, 121, 121, 0.7);
   }
 }
 
@@ -43,4 +52,9 @@
   color: #fff;
   text-align: center;
   text-shadow: 1px 1px 3px black, 0 0 1em #333;
+}
+
+.top-content__description span
+{
+  display: block;
 }
