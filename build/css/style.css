@@ -267,6 +267,13 @@ template {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(121, 121, 121, 0.7); }
+  .top-content--art {
+    background-blend-mode: multiply;
+    background-image: url("../img/art.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(121, 121, 121, 0.7); }
 
 .top-content__title {
   font-family: "OpenSans-Bold";
@@ -707,6 +714,39 @@ template {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-bottom: 30px; }
+  .colors__img--art {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+.art__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .art__img--matiss {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .art__img--art {
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+.art__img img {
+  width: 100%;
+  padding-bottom: 20px; }
+
+.art__img--art img {
+  width: 370px;
+  height: auto;
+  padding-bottom: 20px; }
 
 .left {
   width: 35%;

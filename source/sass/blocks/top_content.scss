@@ -28,6 +28,15 @@
     background-size: cover;
     background-color: rgba(121, 121, 121, 0.7);
   }
+  &--art
+  {
+    background-blend-mode: multiply;
+    background-image: url("../img/art.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(121, 121, 121, 0.7);
+  }
 }
 
 

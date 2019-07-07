@@ -39,6 +39,39 @@
     justify-content: space-around;
     margin-bottom: 30px;
   }
+  &--art
+  {
+    flex-wrap: wrap;
+  }
+}
+
+.art__img
+{
+  display: flex;
+  flex-direction: column;
+  &--matiss
+  {
+    justify-content: center;
+  }
+  &--art
+  {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.art__img img
+{
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.art__img--art img
+{
+  width: 370px;
+  height: auto;
+  padding-bottom: 20px;
 }
 
 .left
