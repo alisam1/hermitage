@@ -37,6 +37,15 @@
     background-size: cover;
     background-color: rgba(121, 121, 121, 0.7);
   }
+  &--people
+  {
+    background-blend-mode: multiply;
+    background-image: url("../img/people.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(121, 121, 121, 0.7);
+  }
 }
 
 
