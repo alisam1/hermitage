@@ -65,6 +65,12 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  &--city
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .art__img img
@@ -83,6 +89,13 @@
 .art__img--people img
 {
   width: 500px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.art__img--city img
+{
+  width: 560px;
   height: auto;
   padding-bottom: 20px;
 }
@@ -171,6 +184,11 @@
   padding-top: 40px;
   padding-bottom: 40px;
   margin-bottom: 70px;
+}
+
+.quote__attention
+{
+  width: 90%;
 }
 
 .quote__title
