@@ -4,62 +4,10 @@
   cursor: pointer;
 }
 
-.materials__card--visual a:hover
-{
-  background: rgba(120,117,235,0.9);
-  position: absolute;
-  width: 1000px;
-  margin-left: -0px;
-  margin-top: 0px;
-  height: 420px;
-  opacity: 1;
-  color: #fff;
-  transition: linear 0.6s;
-  border-radius: 4px;
-}
-
-.materials__card--visual a:hover .materials__about
-{
-  color: #fff;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-
-.materials__card--visual a:hover .materials__description
-{
-  color: #fff;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-
 .materials__card--int a
 {
   text-decoration: none;
   cursor: pointer;
-}
-
-.materials__card--int a:hover
-{
-  background: rgba(1,138,140,0.9);
-  position: absolute;
-  width: 1000px;
-  margin-left: -0px;
-  margin-top: 0px;
-  height: 420px;
-  opacity: 1;
-  color: #fff;
-  transition: linear 0.6s;
-  border-radius: 4px;
-}
-
-.materials__card--int a:hover .materials__about
-{
-  color: #fff;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-
-.materials__card--int a:hover .materials__description
-{
-  color: #fff;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 
