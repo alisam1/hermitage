@@ -184,3 +184,275 @@
 {
   margin-left: 300px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+  .materials__card
+  {
+    width: 90%;
+    height: 350px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 60px;
+    &--visual
+    {
+      background-image: url("../img/visual.png");
+    }
+    &--int
+    {
+      background-image: url("../img/int.png")
+    }
+    &--art
+    {
+      background-image: url("../img/art.png")
+    }
+    &--people
+    {
+      background-image: url("../img/people.png")
+    }
+    &--city
+    {
+      background-image: url("../img/city.png")
+    }
+  }
+
+    .materials__about
+    {
+      width: auto;
+      margin-left: 0;
+      font-size: 30px;
+      line-height: 40px;
+      padding-top: 40px;
+    }
+
+    .materials__description
+    {
+      font-size: 20px;
+      line-height: 30px;
+      margin-left: 0;
+      width: 350px;
+    }
+
+    .materials__card--visual .materials__about
+    {
+      width: 250px;
+      margin-left: 40px;
+      text-align: left;
+      padding-top: 0;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+      .materials__card--visual .materials__description
+      {
+        margin-left: 40px;
+        text-align: left;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      .materials__card--art .materials__about
+      {
+        margin-left: 40px;
+        text-align: left;
+        padding-top: 40px;
+      }
+
+        .materials__card--art .materials__description
+        {
+          margin-left: 40px;
+          text-align: left;
+        }
+
+    .materials__card--int .materials__about
+    {
+      margin-left: 380px;
+      text-align: left;
+    }
+
+      .materials__card--int .materials__description
+      {
+        margin-left: 380px;
+        text-align: left;
+      }
+
+      .materials__card--int a {
+    margin-left: 0px;
+}
+
+    .materials__card--people .materials__about
+    {
+      margin-left: 380px;
+      text-align: left;
+    }
+
+      .materials__card--people .materials__description
+      {
+        margin-left: 380px;
+        text-align: left;
+      }
+
+      .materials__card--city .materials__about
+      {
+        margin-left: 40px;
+        text-align: left;
+        padding-top: 40px;
+      }
+
+    .materials__card--city .materials__description
+        {
+          margin-left: 40px;
+          text-align: left;
+        }
+
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+  .materials__title {
+    font-family: "OpenSans-Bold";
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #000;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+  .materials__card
+  {
+    height:150px;
+    background-size: contain;
+  }
+
+  .materials__about
+  {
+    width: auto;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 20px;
+  }
+
+  .materials__description
+  {
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .materials__card--visual .materials__about
+  {
+    width: auto;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+
+  }
+
+  .materials__card--visual .materials__description {
+      margin-left: 0px;
+      text-align: left;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 0px;
+      width: 65%;
+  }
+
+    .materials__card--art .materials__about
+    {
+      margin-left: 0px;
+      text-align: left;
+      padding-top: 0px;
+      margin: 0 auto;
+      margin-top: 20px;
+      padding-top: 0;
+
+    }
+
+      .materials__card--art .materials__description
+      {
+        width: 65%;
+        text-align: left;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+
+  .materials__card--int .materials__about
+  {
+    text-align: left;
+    padding-top: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 180px;
+  }
+
+    .materials__card--int .materials__description
+    {
+      text-align: left;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 0px;
+      margin-left: 180px;
+      text-align: left;
+      width: 55%;
+    }
+
+    .materials__card--int a {
+  margin-left: 0px;
+}
+
+  .materials__card--people .materials__about
+  {
+    text-align: left;
+    padding-top: 0;
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 180px;
+  }
+
+    .materials__card--people .materials__description
+    {
+      text-align: left;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 0px;
+      margin-left: 180px;
+      text-align: left;
+      width: 55%
+    }
+
+    .materials__card--city .materials__about
+    {
+      margin-left: 0px;
+      text-align: left;
+      padding-top: 0px;
+      margin: 0 auto;
+      margin-top: 25px;
+      padding-top: 0;
+    }
+
+  .materials__card--city .materials__description
+      {
+        width: 65%;
+        text-align: left;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+
+      .materials__card--visual a {
+    margin-left: 0px;
+}
+
+
+}

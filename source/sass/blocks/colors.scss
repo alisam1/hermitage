@@ -238,3 +238,15 @@
 
 		#ex2 img:hover { cursor: url("../img/grab.cur"), default; }
 		#ex2 img:active { cursor: url("../img/grabbed.cur"), default; }
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+  .quote__description {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "OpenSans-Light";
+    color: #000;
+    font-size: 18px;
+    line-height: 28px;
+}
+}
