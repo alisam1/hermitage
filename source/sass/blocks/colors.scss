@@ -239,7 +239,148 @@
 		#ex2 img:hover { cursor: url("../img/grab.cur"), default; }
 		#ex2 img:active { cursor: url("../img/grabbed.cur"), default; }
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .colors__img
+  {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .colors__img img
+  {
+    width: 80%;
+  }
+
+  .colors__img--black
+  {
+    width: 100%;
+  }
+
+  .colors__img--black img
+  {
+    width: 100%;
+  }
+
+  .colors__img--details
+  {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .colors__img--details img
+  {
+    width: 100%;
+  }
+
+  .art__img--people
+  {
+    flex-direction: column;
+  }
+
+  .people__img
+  {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+    .people__img img
+    {
+      width: 100%;
+    }
+}
+
 @media screen and (min-width: 0px) and (max-width: 767px) {
+
+  .colors__title
+  {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .colors__description
+  {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .colors__info
+  {
+    font-family: "OpenSans-Light";
+    color: #000;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px;
+  }
+  .colors__img
+  {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .colors__img img
+  {
+    width: 90%;
+  }
+
+  .left-block img {
+    height: auto;
+    width: 100%;
+}
+
+.colors__img--black
+{
+  width: 100%;
+}
+
+.colors__img--black img
+{
+  width: 100%;
+}
+.colors__img--details
+{
+  width: 100%;
+  margin: 0 auto;
+}
+.colors__img--details img
+{
+  width: 100%;
+}
+
+.art__img--art
+{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.art__img--art img
+{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.art__img--people
+{
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.art__img--people img
+{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.art__img--city
+{
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.art__img--city img
+{
+  width: 100%;
+  margin: 0 auto;
+}
+
 
   .quote__description {
     width: 80%;

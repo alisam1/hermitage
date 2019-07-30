@@ -835,7 +835,7 @@ template {
     font-size: 16px;
     line-height: 26px;
     margin-left: 0;
-    width: 80%; }
+    width: 200px; }
   .materials__card--visual .materials__about {
     width: auto;
     margin-left: 0;
@@ -850,7 +850,7 @@ template {
     font-size: 14px;
     line-height: 20px;
     margin-top: 0px;
-    width: 65%; }
+    width: 200px; }
   .materials__card--art .materials__about {
     margin-left: 0px;
     text-align: left;
@@ -859,7 +859,7 @@ template {
     margin-top: 20px;
     padding-top: 0; }
   .materials__card--art .materials__description {
-    width: 65%;
+    width: 200px;
     text-align: left;
     font-size: 14px;
     line-height: 20px;
@@ -870,15 +870,15 @@ template {
     padding-top: 0;
     margin: 0;
     margin-top: 20px;
-    margin-left: 180px; }
+    margin-left: 170px; }
   .materials__card--int .materials__description {
     text-align: left;
     font-size: 14px;
     line-height: 20px;
     margin-top: 0px;
-    margin-left: 180px;
+    margin-left: 170px;
     text-align: left;
-    width: 55%; }
+    width: 200px; }
   .materials__card--int a {
     margin-left: 0px; }
   .materials__card--people .materials__about {
@@ -886,15 +886,15 @@ template {
     padding-top: 0;
     margin: 0;
     margin-top: 25px;
-    margin-left: 180px; }
+    margin-left: 170px; }
   .materials__card--people .materials__description {
     text-align: left;
     font-size: 14px;
     line-height: 20px;
     margin-top: 0px;
-    margin-left: 180px;
+    margin-left: 170px;
     text-align: left;
-    width: 55%; }
+    width: 200px; }
   .materials__card--city .materials__about {
     margin-left: 0px;
     text-align: left;
@@ -1290,7 +1290,88 @@ template {
 #ex2 img:active {
   cursor: url("../img/grabbed.cur"), default; }
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .colors__img {
+    width: 80%;
+    margin: 0 auto; }
+  .colors__img img {
+    width: 80%; }
+  .colors__img--black {
+    width: 100%; }
+  .colors__img--black img {
+    width: 100%; }
+  .colors__img--details {
+    width: 80%;
+    margin: 0 auto; }
+  .colors__img--details img {
+    width: 100%; }
+  .art__img--people {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .people__img {
+    width: 80%;
+    margin: 0 auto; }
+  .people__img img {
+    width: 100%; } }
+
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .colors__title {
+    font-size: 32px;
+    line-height: 44px; }
+  .colors__description {
+    font-size: 20px;
+    line-height: 30px; }
+  .colors__info {
+    font-family: "OpenSans-Light";
+    color: #000;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px; }
+  .colors__img {
+    width: 90%;
+    margin: 0 auto; }
+  .colors__img img {
+    width: 90%; }
+  .left-block img {
+    height: auto;
+    width: 100%; }
+  .colors__img--black {
+    width: 100%; }
+  .colors__img--black img {
+    width: 100%; }
+  .colors__img--details {
+    width: 100%;
+    margin: 0 auto; }
+  .colors__img--details img {
+    width: 100%; }
+  .art__img--art {
+    width: 80%;
+    margin: 0 auto; }
+  .art__img--art img {
+    width: 100%;
+    margin: 0 auto; }
+  .art__img--people {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin: 0 auto; }
+  .art__img--people img {
+    width: 100%;
+    margin: 0 auto; }
+  .art__img--city {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin: 0 auto; }
+  .art__img--city img {
+    width: 100%;
+    margin: 0 auto; }
   .quote__description {
     width: 80%;
     margin: 0 auto;
@@ -1342,6 +1423,20 @@ template {
 
 .content__info span {
   font-family: "OpenSans-Bold"; }
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .content__title {
+    font-size: 32px;
+    line-height: 44px; }
+  .content__description {
+    font-size: 20px;
+    line-height: 30px; }
+  .content__info {
+    font-family: "OpenSans-Light";
+    color: #000;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px; } }
 
 .interior__img {
   display: -webkit-box;
@@ -1397,6 +1492,68 @@ template {
   width: 320px;
   height: 320px;
   padding-bottom: 20px; }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .interior__img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .interior__img img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; }
+  .interior__img--hadid img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; }
+  .stairs__img {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto; }
+  .stairs__img img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px; }
+  .selfie__img {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .interior__img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .interior__img img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; }
+  .interior__img--hadid img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; }
+  .stairs__img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto; }
+  .stairs__img img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px; }
+  .selfie__img img {
+    width: 80%;
+    height: auto;
+    padding-bottom: 20px;
+    margin: 0 auto; } }
 
 /* Magnific Popup CSS */
 .mfp-bg {

@@ -58,3 +58,30 @@
 {
   font-family: $font-family-bold;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+  .content__title
+  {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .content__description
+  {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .content__info
+  {
+    font-family: "OpenSans-Light";
+    color: #000;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px;
+  }
+}
