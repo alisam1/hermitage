@@ -104,12 +104,32 @@
     margin-top: -25px;
     z-index: 998;
     position: relative;
+    &--patterns
+    {
+      background-image: url("../img/blueplot.jpg");
+    }
+    &--interior
+    {
+      background-image: url("../img/int.jpg");
+    }
+    &--art
+    {
+      background-image: url("../img/art.jpeg");
+    }
+    &--people
+    {
+      background-image: url("../img/people.jpg");
+    }
+    &--city
+    {
+      background-image: url("../img/city_bg.jpg");
+    }
 }
 
 .top-content__title {
     font-family: "OpenSans-Bold";
-    font-size: 34px;
-    line-height: 44px;
+    font-size: 40px;
+    line-height: 50px;
     text-transform: uppercase;
     color: #fff;
     text-align: center;

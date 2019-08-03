@@ -368,10 +368,20 @@ template {
     margin-top: -25px;
     z-index: 998;
     position: relative; }
+    .top-content--patterns {
+      background-image: url("../img/blueplot.jpg"); }
+    .top-content--interior {
+      background-image: url("../img/int.jpg"); }
+    .top-content--art {
+      background-image: url("../img/art.jpeg"); }
+    .top-content--people {
+      background-image: url("../img/people.jpg"); }
+    .top-content--city {
+      background-image: url("../img/city_bg.jpg"); }
   .top-content__title {
     font-family: "OpenSans-Bold";
-    font-size: 34px;
-    line-height: 44px;
+    font-size: 40px;
+    line-height: 50px;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
