@@ -2076,22 +2076,30 @@ img.mfp-img {
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .main-footer {
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin-top: 50px; }
   .main-footer__all {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+  .main-footer__about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .main-footer__menu {
-    width: 100%; } }
+    width: 100%;
+    margin-top: 30px; }
+  .main-footer__social {
+    display: none; } }
 
 @font-face {
   font-family: "OpenSans";
