@@ -1043,8 +1043,7 @@ template {
   line-height: 30px;
   padding-bottom: 10px; }
   .project__text--title {
-    font-family: "OpenSans";
-    text-align: center; }
+    font-family: "OpenSans"; }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .comands__title {
@@ -1100,14 +1099,22 @@ template {
     color: #000;
     font-size: 18px;
     line-height: 30px; }
+  .project {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 30px; }
+  .project__info {
+    padding-top: 20px;
+    padding-bottom: 0px; }
   .project__title {
     font-family: "OpenSans-Bold";
     font-size: 32px;
     line-height: 44px;
     text-align: center;
     color: #000;
-    margin-top: 50px;
-    margin-bottom: 60px; }
+    margin-top: 20px;
+    margin-bottom: 30px; }
   .project__text {
     font-family: "OpenSans-Light";
     color: #000;
