@@ -306,14 +306,38 @@
     line-height: 44px;
     text-align: center;
     color: #000;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
   .materials__card
   {
-    height:150px;
+    max-width: 300px;
+    height:130px;
     background-size: contain;
+    position: relative;
+  }
+
+  .materials__text
+  {
+    position: absolute;
+  }
+
+  .materials__card--int .materials__text
+  {
+    top:10px;
+    left: 150px;
+  }
+
+  .materials__card--people .materials__text
+  {
+    top:10px;
+    left: 150px;
+  }
+
+  .materials__card--art a
+  {
+    margin-left: 0;
   }
 
   .materials__about
@@ -348,8 +372,8 @@
   .materials__card--visual .materials__description {
       margin-left: 0px;
       text-align: left;
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 12px;
+      line-height: 18px;
       margin-top: 0px;
       width: 200px;
   }
@@ -369,8 +393,8 @@
       {
         width: 200px;
         text-align: left;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
         margin-top: 0px;
         margin-left: 0px;
       }
@@ -380,19 +404,19 @@
     text-align: left;
     padding-top: 0;
     margin: 0;
-    margin-top: 35px;
-    margin-left: 170px;
   }
 
     .materials__card--int .materials__description
     {
       text-align: left;
-      font-size: 14px;
-      line-height: 20px;
-      margin-top: 0px;
-      margin-left: 170px;
+      font-size: 12px;
+      line-height: 18px;
       text-align: left;
-        width: 200px;
+      width: 150px;
+      margin-left: 0;
+      margin: 0;
+      padding: 0;
+      padding-top: 5px;
     }
 
     .materials__card--int a {
@@ -404,19 +428,19 @@
     text-align: left;
     padding-top: 0;
     margin: 0;
-    margin-top: 25px;
-    margin-left: 170px;
   }
 
     .materials__card--people .materials__description
     {
       text-align: left;
-      font-size: 14px;
-      line-height: 20px;
-      margin-top: 0px;
-      margin-left: 170px;
+      font-size: 12px;
+      line-height: 18px;
       text-align: left;
-        width: 200px;
+      width: 150px;
+      margin-left: 0;
+      margin: 0;
+      padding: 0;
+      padding-top: 5px;
     }
 
     .materials__card--city .materials__about
@@ -425,7 +449,7 @@
       text-align: left;
       padding-top: 0px;
       margin: 0 auto;
-      margin-top: 25px;
+      margin-top: 0px;
       padding-top: 0;
     }
 
@@ -433,8 +457,8 @@
       {
         width: 65%;
         text-align: left;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
         margin-top: 0px;
         margin-left: 0px;
       }
