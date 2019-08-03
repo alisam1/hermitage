@@ -439,14 +439,11 @@ template {
     padding-top: 20px;
     padding-bottom: 20px; }
   .main-content__description {
-    width: 90%;
-    margin: 0 auto;
-    font-family: "OpenSans";
-    font-size: 18px;
-    line-height: 28px;
-    text-align: center;
+    font-family: "OpenSans-Light";
     color: #000;
-    margin-bottom: 0px; } }
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px; } }
 
 .data__title {
   font-family: "OpenSans-Bold";
@@ -516,7 +513,7 @@ template {
     font-size: 20px;
     line-height: 1.35;
     border-top: 2px solid #000;
-    width: 80%;
+    width: 90%;
     padding: 10px;
     padding-bottom: 10px;
     padding-bottom: 20px;
@@ -603,7 +600,7 @@ template {
     line-height: 44px;
     text-align: center;
     color: #000;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 60px; }
   .results__sidebar {
     font-family: "OpenSans-Light";
@@ -667,6 +664,9 @@ template {
   .materials__card--city {
     background-image: url("../img/city.png"); }
 
+.materials__card a {
+  text-decoration: none; }
+
 .materials__about {
   width: 450px;
   font-family: "OpenSans-Bold";
@@ -706,9 +706,6 @@ template {
 .materials__card--visual .materials__description {
   margin-left: 110px; }
 
-.materials__card--visual a {
-  margin-left: 430px; }
-
 .materials__card--int .materials__about {
   text-align: right;
   margin-left: 402px; }
@@ -717,9 +714,6 @@ template {
   text-align: right;
   margin-left: 402px;
   margin-bottom: 40px; }
-
-.materials__card--int a {
-  margin-left: 745px; }
 
 .materials__card--art .materials__about {
   margin-left: 110px; }
@@ -738,9 +732,6 @@ template {
   text-align: right;
   margin-left: 395px;
   margin-bottom: 40px; }
-
-.materials__card--people a {
-  margin-left: 745px; }
 
 .materials__card--city .materials__about {
   margin-left: 110px; }
@@ -852,7 +843,7 @@ template {
     line-height: 30px;
     margin: 0;
     padding: 0;
-    padding-top: 10px; }
+    padding-top: 25px; }
   .materials__card--visual .materials__description {
     margin-left: 0px;
     text-align: left;
@@ -878,7 +869,7 @@ template {
     text-align: left;
     padding-top: 0;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-left: 170px; }
   .materials__card--int .materials__description {
     text-align: left;
@@ -985,13 +976,19 @@ template {
   font-family: "OpenSans-Bold";
   font-size: 18px;
   line-height: 28px;
-  text-align: center; }
+  text-align: center;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0; }
 
 .comands__description {
   font-family: "OpenSans-Light";
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center; }
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0;
+  margin: 0; }
 
 .comands__description span {
   display: block; }
@@ -1326,6 +1323,9 @@ template {
     width: 100%; } }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .colors__all {
+    margin-top: 20px;
+    margin-bottom: 20px; }
   .colors__title {
     font-size: 32px;
     line-height: 44px; }
