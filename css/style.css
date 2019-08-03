@@ -546,7 +546,7 @@ template {
   text-align: center;
   color: #000;
   margin-top: 30px;
-  margin-bottom: 40px; }
+  margin-bottom: 70px; }
 
 .results__line {
   width: 100%;
@@ -1024,7 +1024,7 @@ template {
 .project__info {
   width: 90%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px; }
 
 .project__title {
