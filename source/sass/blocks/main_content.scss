@@ -11,16 +11,22 @@
   padding-bottom: 40px;
 }
 
+.main__all
+{
+  margin-top: 40px;
+}
+
 .main-content__description
 {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 20px;
-    font-family: $font-family;
-    font-size: 22px;
-    line-height: 32px;
+    font-family: $font-family-light;
+    font-size: 20px;
+    line-height: 30px;
     text-align: left;
     color: #000;
+    padding-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
