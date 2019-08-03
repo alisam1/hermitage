@@ -119,7 +119,6 @@
   &--title
   {
     font-family: $font-family;
-    text-align: center;
   }
 }
 
@@ -204,6 +203,19 @@
     line-height: 30px;
 }
 
+.project {
+    width: 90%;
+    margin: 0 auto;
+        margin-bottom: 0px;
+    margin-bottom: 30px;
+}
+
+.project__info
+{
+padding-top: 20px;
+padding-bottom: 0px;
+}
+
 .project__title
 {
   font-family: "OpenSans-Bold";
@@ -211,8 +223,8 @@
   line-height: 44px;
   text-align: center;
   color: #000;
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .project__text {
