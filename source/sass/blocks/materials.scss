@@ -58,6 +58,10 @@
   }
 }
 
+.materials__card a
+{
+  text-decoration: none;
+}
 
 .materials__about
 {
@@ -112,11 +116,6 @@
   margin-left: 110px;
 }
 
-.materials__card--visual a
-{
-  margin-left: 430px;
-}
-
 .materials__card--int .materials__about
 {
   text-align: right;
@@ -128,11 +127,6 @@
   text-align: right;
   margin-left: 402px;
   margin-bottom: 40px;
-}
-
-.materials__card--int a
-{
-  margin-left: 745px;
 }
 
 
@@ -162,11 +156,6 @@
   text-align: right;
   margin-left: 395px;
   margin-bottom: 40px;
-}
-
-.materials__card--people a
-{
-  margin-left: 745px;
 }
 
 .materials__card--city .materials__about
@@ -352,7 +341,7 @@
     line-height: 30px;
     margin: 0;
     padding: 0;
-    padding-top: 10px;
+    padding-top: 25px;
 
   }
 
@@ -391,7 +380,7 @@
     text-align: left;
     padding-top: 0;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-left: 170px;
   }
 
