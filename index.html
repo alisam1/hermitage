@@ -39,6 +39,8 @@
      </div>
 
      <div class="data container">
+       <div id="trigger2" class="spacer s0"></div>
+       <div id="reveal2" class="data__all">
        <h3 class="data__title">Данные проекта</h3>
        <div class="data__info">
          <div class="data__sidebar">Теги: #hermitage, #hermitagemuseum, #hermitage_museum, #hermitagepalace, #эрмитаж, #эрмитаже, #эрмитажа, #эрмитажспб.</div>
@@ -47,11 +49,13 @@
          <p class="data__text">В результате мы исследовали 82 000 фотографий, выложенных в открытом доступе в Instagram в период с 2011 по 2016 годы. </p>
        </div>
      </div>
+     </div>
 
      <div class="manerials container">
        <h3 class="materials__title">Материалы проекта</h3>
-       <div class="materials__info">
-         <div class="materials__card materials__card--visual">
+       <div class="spacer s0"></div>
+       <div id="reveal-elements" class="materials__info">
+         <div class="digit materials__card materials__card--visual">
            <a href="./patterns.html">
             <div class="materials__text">
            <h3 class="materials__about">Визуализация данных</h3>
@@ -59,7 +63,7 @@
            </div>
            </a>
          </div>
-         <div class="materials__card materials__card--int">
+         <div class="digit materials__card materials__card--int">
           <a href="./interior.html">
           <div class="materials__text">
            <h3 class="materials__about">Интерьеры</h3>
@@ -67,7 +71,7 @@
          </div>
          </a>
          </div>
-         <div class="materials__card materials__card--art">
+         <div class="digit materials__card materials__card--art">
            <a href="./art.html">
           <div class="materials__text">
            <h3 class="materials__about">Искусство</h3>
@@ -75,7 +79,7 @@
          </div>
          </a>
          </div>
-         <div class="materials__card materials__card--people">
+         <div class="digit materials__card materials__card--people">
            <a href="./people.html">
           <div class="materials__text">
            <h3 class="materials__about">Посетители</h3>
@@ -83,7 +87,7 @@
          </div>
            </a>
          </div>
-         <div class="materials__card materials__card--city">
+         <div class="digit materials__card materials__card--city">
            <a href="./city.html">
           <div class="materials__text">
            <h3 class="materials__about">Музей и город</h3>
@@ -92,9 +96,12 @@
            </a>
          </div>
        </div>
+       <div class="spacer s2"></div>
      </div>
 
      <div class="results">
+       <div id="trigger3" class="spacer s0"></div>
+       <div id="reveal3">
        <div class="results__title container">Результаты</div>
        <div class="results__all">
          <div class="container">
@@ -122,6 +129,8 @@
 
 
    <div class="comands container">
+     <div id="trigger4" class="spacer s0"></div>
+     <div id="reveal4">
      <h3 class="comands__title">Команда проекта</h3>
      <div class="comands__info">
        <div class="comands__card">
@@ -168,7 +177,7 @@
     </div>
 
 
-   </main>
+   </div></div></main>
 
    <footer class="main-footer">
      <div class="container">
@@ -205,4 +214,63 @@
 
 
   </body>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script>
+  var controller = new ScrollMagic.Controller();
+		new ScrollMagic.Scene({
+          triggerElement: "#trigger1",
+            triggerHook: 0.7,
+            offset: 50, // move trigger to center of element
+            reverse: true // only do once
+          })
+          .setClassToggle("#reveal1", "visible") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+  new ScrollMagic.Scene({
+          triggerElement: "#trigger2",
+          triggerHook: 0.9,
+          offset: 50, // move trigger to center of element
+          reverse: true // only do once
+          })
+          .setClassToggle("#reveal2", "visible") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+  new ScrollMagic.Scene({
+          triggerElement: "#trigger3",
+          triggerHook: 0.9,
+          offset: 50, // move trigger to center of element
+          reverse: true // only do once
+          })
+          .setClassToggle("#reveal3", "visible") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+   new ScrollMagic.Scene({
+          triggerElement: "#trigger4",
+          triggerHook: 0.9,
+          offset: 50, // move trigger to center of element
+          reverse: true // only do once
+          })
+          .setClassToggle("#reveal4", "visible") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+var revealElements = document.getElementsByClassName("digit");
+          for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+          new ScrollMagic.Scene({
+          triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+          offset: 50,												 // start a little later
+          triggerHook: 0.9,
+          })
+          .setClassToggle(revealElements[i], "visible") // add class toggle
+          .addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
+          .addTo(controller);
+          		}
+</script>
 </html>
