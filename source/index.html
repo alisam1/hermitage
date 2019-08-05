@@ -39,7 +39,7 @@
      </div>
 
      <div class="data container">
-       <div id="trigger2" class="spacer s0"></div>
+       <div id="trigger2"></div>
        <div id="reveal2" class="data__all">
        <h3 class="data__title">Данные проекта</h3>
        <div class="data__info">
@@ -53,7 +53,6 @@
 
      <div class="manerials container">
        <h3 class="materials__title">Материалы проекта</h3>
-       <div class="spacer s0"></div>
        <div id="reveal-elements" class="materials__info">
          <div class="digit materials__card materials__card--visual">
            <a href="./patterns.html">
@@ -96,12 +95,9 @@
            </a>
          </div>
        </div>
-       <div class="spacer s2"></div>
      </div>
 
      <div class="results">
-       <div id="trigger3" class="spacer s0"></div>
-       <div id="reveal3">
        <div class="results__title container">Результаты</div>
        <div class="results__all">
          <div class="container">
@@ -127,10 +123,12 @@
      </div>
    </div>
 
+   <div class="comands__block">
+
+     <div id="trigger3"></div>
+     <div id="reveal3">
 
    <div class="comands container">
-     <div id="trigger4" class="spacer s0"></div>
-     <div id="reveal4">
      <h3 class="comands__title">Команда проекта</h3>
      <div class="comands__info">
        <div class="comands__card">
@@ -156,6 +154,7 @@
      </div>
 
     </div>
+  </div>
 
 
      <div class="project">
@@ -176,6 +175,8 @@
 
     </div>
 
+  </div>
+     </div>
 
    </main>
 
@@ -218,7 +219,6 @@
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script>
   var controller = new ScrollMagic.Controller();
 		new ScrollMagic.Scene({
@@ -228,7 +228,6 @@
             reverse: true // only do once
           })
           .setClassToggle("#reveal1", "visible") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -238,7 +237,6 @@
           reverse: true // only do once
           })
           .setClassToggle("#reveal2", "visible") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -248,7 +246,6 @@
           reverse: true // only do once
           })
           .setClassToggle("#reveal3", "visible") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
 
    new ScrollMagic.Scene({
@@ -258,7 +255,6 @@
           reverse: true // only do once
           })
           .setClassToggle("#reveal4", "visible") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
 
 var revealElements = document.getElementsByClassName("digit");
@@ -269,7 +265,6 @@ var revealElements = document.getElementsByClassName("digit");
           triggerHook: 0.9,
           })
           .setClassToggle(revealElements[i], "visible") // add class toggle
-          .addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
           .addTo(controller);
           		}
 </script>
