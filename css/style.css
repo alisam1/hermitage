@@ -420,8 +420,8 @@ template {
 
 .digit {
   opacity: 0;
-  -webkit-transform: translateX(-40px);
-  transform: translateX(-40px);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
   -webkit-transition: all 0.6s ease-out;
   transition: all 0.6s ease-out; }
 
@@ -429,6 +429,9 @@ template {
   opacity: 1;
   -webkit-transform: none;
   transform: none; }
+
+#trigger1 {
+  display: none; }
 
 .main-content__info {
   width: 80%;
