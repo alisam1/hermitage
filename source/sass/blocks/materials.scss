@@ -31,9 +31,11 @@
 
 .materials__card
 {
-  width: 90%;
+  width: 85%;
   height: 420px;
+  box-shadow: 5.29px 7.281px 14.24px 1.76px rgba(58, 58, 68, 0.21);
   margin: 0 auto;
+  border-radius: 6px;
   background-repeat: no-repeat;
   margin-bottom: 60px;
   &--visual
@@ -56,6 +58,12 @@
   {
     background-image: url("../img/city.png")
   }
+}
+
+.materials__card:hover
+{
+  box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
+  cursor: pointer;
 }
 
 .materials__card a
