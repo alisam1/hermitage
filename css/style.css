@@ -678,7 +678,8 @@ template {
 .materials__card {
   width: 85%;
   margin: 0 auto;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  border-radius: 10px; }
 
 .materials__card a {
   height: 400px;
@@ -875,7 +876,6 @@ template {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px; }
   .material__info {
-    padding: 25px 15px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%;
@@ -1163,6 +1163,11 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 
+.colors__img--patterns img {
+  border-style: none;
+  width: 32%;
+  height: 30%; }
+
 .art__img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1289,7 +1294,8 @@ template {
   border-radius: 5px;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  margin-top: 50px; }
 
 .quote__attention {
   width: 90%; }
@@ -1444,22 +1450,52 @@ template {
 .content__description {
   width: 80%;
   margin: 0 auto;
-  font-family: "OpenSans";
-  font-size: 26px;
-  line-height: 38px;
-  text-align: center;
+  font-family: "OpenSans-Light";
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
   color: #000;
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
 
 .content__description span {
   font-family: "OpenSans-Bold-Italic"; }
 
 .content__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 50px; }
 
 .content__img img {
   width: 100%;
   height: auto; }
+
+.content__img--dinamic img {
+  width: 50%;
+  height: 100%; }
+
+.content__img--map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px; }
+
+.content__img--map img {
+  padding-bottom: 20px; }
 
 .content__info {
   width: 80%;
