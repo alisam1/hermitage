@@ -1,3 +1,63 @@
+.materials__card
+{
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+
+.materials__card a
+{
+height: 400px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: stretch;
+align-content: stretch;
+border-radius: 10px;
+background-color: white;
+-webkit-box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
+box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
+background-color: #fff;
+}
+
+.materials__card--odd a
+{
+  flex-direction: row-reverse;
+}
+
+
+.material__img
+{
+flex: 0 0 35%;
+max-width: 35%;
+background-repeat: no-repeat;
+background-position: 72% 50%;
+background-size: cover;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+.materials__card--odd .material__img
+{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.material__info
+{
+  flex: 0 0 55%;
+  max-width: 55%;
+  padding-left: 60px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+
 .materials__card--visual a
 {
   text-decoration: none;
@@ -20,6 +80,7 @@
   color: #000;
   margin-top: 70px;
   margin-bottom: 70px;
+  position: relative;
 }
 
 
@@ -27,37 +88,6 @@
 {
   display: flex;
   flex-direction: column;
-}
-
-.materials__card
-{
-  width: 85%;
-  height: 420px;
-  box-shadow: 5.29px 7.281px 14.24px 1.76px rgba(58, 58, 68, 0.21);
-  margin: 0 auto;
-  border-radius: 6px;
-  background-repeat: no-repeat;
-  margin-bottom: 60px;
-  &--visual
-  {
-    background-image: url("../img/visual.png");
-  }
-  &--int
-  {
-    background-image: url("../img/int.png")
-  }
-  &--art
-  {
-    background-image: url("../img/art.png")
-  }
-  &--people
-  {
-    background-image: url("../img/people.png")
-  }
-  &--city
-  {
-    background-image: url("../img/city.png")
-  }
 }
 
 .materials__card:hover
@@ -78,8 +108,11 @@
   font-size: 40px;
   line-height: 50px;
   color: #000;
-  padding-top: 70px;
+  padding-top: 0px;
+  position: relative;
+  padding-bottom: 15px;
 }
+
 
 .materials__about a
 {
@@ -88,17 +121,55 @@
   font-size: 40px;
   line-height: 50px;
   color: #000;
-  padding-top: 70px;
+  padding-top: 0px;
   text-decoration: none;
 }
+
+.materials__description::before
+{
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 5px;
+  background-color: #000;
+  top: -20px;
+}
+
+.materials__description--visual::before
+{
+  background-color: #064aee;
+}
+
+.materials__description--int::before
+{
+  background-color: #00abc5;
+}
+
+.materials__description--art::before
+{
+  background-color: #235cbf;
+}
+
+.materials__description--people::before
+{
+  background-color: #9fa8b3;
+}
+
+.materials__description--city::before
+{
+  background-color: #f1a30e;
+}
+
 
 .materials__description
 {
   width: 450px;
-  font-family: $font-family;
+  font-family: $font-family-light;
   font-size: 23px;
   line-height: 30px;
   color: #000;
+  position: relative;
+  padding-top: 15px;
 
 }
 
@@ -113,75 +184,6 @@
 
 }
 
-.materials__card--visual .materials__about
-{
-  font-size: 36px;
-  margin-left: 110px;
-}
-
-.materials__card--visual .materials__description
-{
-  margin-left: 110px;
-}
-
-.materials__card--int .materials__about
-{
-  text-align: right;
-  margin-left: 402px;
-}
-
-.materials__card--int .materials__description
-{
-  text-align: right;
-  margin-left: 402px;
-  margin-bottom: 40px;
-}
-
-
-.materials__card--art .materials__about
-{
-  margin-left: 110px;
-}
-
-.materials__card--art .materials__description
-{
-  margin-left: 110px;
-}
-
-.materials__card--art a
-{
-  margin-left: 350px;
-}
-
-.materials__card--people .materials__about
-{
-  text-align: right;
-  margin-left: 395px;
-}
-
-.materials__card--people .materials__description
-{
-  text-align: right;
-  margin-left: 395px;
-  margin-bottom: 40px;
-}
-
-.materials__card--city .materials__about
-{
-  margin-left: 110px;
-}
-
-.materials__card--city .materials__description
-{
-  margin-left: 110px;
-  margin-bottom: 40px;
-}
-
-.materials__card--city a
-{
-  margin-left: 300px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
   .materials__card
@@ -192,26 +194,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 60px;
-    &--visual
-    {
-      background-image: url("../img/visual.png");
-    }
-    &--int
-    {
-      background-image: url("../img/int.png")
-    }
-    &--art
-    {
-      background-image: url("../img/art.png")
-    }
-    &--people
-    {
-      background-image: url("../img/people.png")
-    }
-    &--city
-    {
-      background-image: url("../img/city.png")
-    }
   }
 
     .materials__about
