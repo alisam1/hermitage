@@ -45,6 +45,14 @@
   }
 }
 
+.colors__img--patterns img
+{
+  border-style: none;
+  width: 32%;
+  height: 30%;
+}
+
+
 .art__img
 {
   display: flex;
@@ -188,6 +196,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
   margin-bottom: 70px;
+  margin-top: 50px;
 }
 
 .quote__attention
