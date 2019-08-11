@@ -243,6 +243,12 @@ border-bottom-left-radius: 10px;
     min-height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .materials__card--odd .material__img
+  {
+    border-bottom-right-radius: 0;
   }
 
   .material__info
@@ -261,7 +267,7 @@ border-bottom-left-radius: 10px;
     padding-top: 0px;
     position: relative;
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin: 0;
   }
 
@@ -273,7 +279,7 @@ border-bottom-left-radius: 10px;
     line-height: 25px;
     color: #000;
     position: relative;
-    padding-top: 15px;
+    padding-top: 0px;
 
 }
 

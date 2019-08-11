@@ -93,8 +93,8 @@
     line-height: 40px;
     text-align: center;
     color: #000;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .results__sidebar {
@@ -109,6 +109,12 @@
     padding-bottom: 20px;
     margin: 0 auto;
     float: none;
+}
+
+.results__info
+{
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 .results__text {
