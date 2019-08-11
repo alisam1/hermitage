@@ -381,13 +381,13 @@ template {
       background-image: url("../img/city_bg.jpg"); }
   .top-content__title {
     font-family: "OpenSans-Bold";
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
     text-shadow: 1px 1px 3px black, 0 0 1em #333;
-    padding-top: 100px;
+    padding-top: 90px;
     opacity: 1; } }
 
 #reveal1, #reveal2, #reveal3, #reveal4 {
@@ -555,8 +555,8 @@ template {
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .data__title {
     font-family: "OpenSans-Bold";
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 30px;
+    line-height: 40px;
     text-align: center;
     color: #000;
     margin-top: 50px;
@@ -650,8 +650,8 @@ template {
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .results__title {
     font-family: "OpenSans-Bold";
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 30px;
+    line-height: 40px;
     text-align: center;
     color: #000;
     margin-top: 20px;
@@ -856,8 +856,8 @@ template {
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .materials__title {
     font-family: "OpenSans-Bold";
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 30px;
+    line-height: 40px;
     text-align: center;
     color: #000;
     margin-top: 20px;
@@ -1027,8 +1027,8 @@ template {
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .comands__title {
     font-family: "OpenSans-Bold";
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 30px;
+    line-height: 40px;
     text-align: center;
     color: #000;
     margin-top: 50px;
@@ -1074,8 +1074,8 @@ template {
     padding-bottom: 0px; }
   .project__title {
     font-family: "OpenSans-Bold";
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 30px;
+    line-height: 40px;
     text-align: center;
     color: #000;
     margin-top: 20px;
@@ -1304,7 +1304,7 @@ template {
   width: 80%;
   margin: 0 auto;
   font-family: "OpenSans-Bold";
-  font-size: 32px;
+  font-size: 30px;
   line-height: 42px;
   text-align: left;
   color: #000;
@@ -1373,11 +1373,17 @@ template {
     margin-top: 20px;
     margin-bottom: 20px; }
   .colors__title {
-    font-size: 32px;
-    line-height: 44px; }
+    font-size: 30px;
+    line-height: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px; }
   .colors__description {
-    font-size: 20px;
-    line-height: 30px; }
+    font-family: "OpenSans-Light";
+    color: #000;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px; }
   .colors__info {
     font-family: "OpenSans-Light";
     color: #000;
@@ -1389,6 +1395,15 @@ template {
     margin: 0 auto; }
   .colors__img img {
     width: 90%; }
+  .colors__img--patterns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .colors__img--patterns img {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px; }
   .left-block img {
     height: auto;
     width: 100%; }
@@ -1432,8 +1447,9 @@ template {
     margin: 0 auto;
     font-family: "OpenSans-Light";
     color: #000;
-    font-size: 18px;
-    line-height: 28px; } }
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px; } }
 
 .content {
   margin-bottom: 70px; }
@@ -1510,17 +1526,33 @@ template {
   font-family: "OpenSans-Bold"; }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .content {
+    margin-bottom: 0; }
   .content__title {
-    font-size: 32px;
-    line-height: 44px; }
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px; }
   .content__description {
-    font-size: 20px;
-    line-height: 30px; }
+    font-family: "OpenSans-Light";
+    color: #000;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px; }
   .content__info {
     font-family: "OpenSans-Light";
     color: #000;
     font-size: 16px;
     line-height: 26px;
+    padding-bottom: 20px; }
+  .content__img--dinamic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .content__img--dinamic img {
+    width: 100%;
+    margin: 0 auto;
     padding-bottom: 20px; } }
 
 .interior__img {
@@ -1770,7 +1802,7 @@ button::-moz-focus-inner {
 .mfp-close {
   width: 44px;
   height: 44px;
-  line-height: 44px;
+  line-height: 40px;
   position: absolute;
   right: 0;
   top: 0;
