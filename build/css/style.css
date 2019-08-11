@@ -1132,11 +1132,11 @@ template {
 .colors__description {
   width: 80%;
   margin: 0 auto;
-  font-family: "OpenSans";
-  font-size: 26px;
-  line-height: 38px;
-  text-align: center;
+  font-family: "OpenSans-Light";
   color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
   margin-bottom: 100px; }
 
 .colors__description a {
