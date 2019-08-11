@@ -86,16 +86,26 @@
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
 
+  .content
+  {
+    margin-bottom: 0;
+  }
+
   .content__title
   {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   .content__description
   {
-    font-size: 20px;
-    line-height: 30px;
+    font-family: "OpenSans-Light";
+    color: #000;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px;
   }
 
   .content__info
@@ -104,6 +114,18 @@
     color: #000;
     font-size: 16px;
     line-height: 26px;
+    padding-bottom: 20px;
+  }
+
+  .content__img--dinamic
+  {
+    flex-direction: column;
+  }
+
+  .content__img--dinamic img
+  {
+    width: 100%;
+    margin: 0 auto;
     padding-bottom: 20px;
   }
 }

@@ -209,7 +209,7 @@
   width: 80%;
   margin: 0 auto;
   font-family: $font-family-bold;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 42px;
   text-align: left;
   color: #000;
@@ -304,14 +304,20 @@
 
   .colors__title
   {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 30px;
+    line-height: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .colors__description
   {
-    font-size: 20px;
-    line-height: 30px;
+    font-family: "OpenSans-Light";
+    color: #000;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px;
   }
 
   .colors__info
@@ -327,9 +333,23 @@
     width: 90%;
     margin: 0 auto;
   }
+
   .colors__img img
   {
     width: 90%;
+  }
+
+
+    .colors__img--patterns
+    {
+      flex-direction: column;
+    }
+
+  .colors__img--patterns img
+  {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
   }
 
   .left-block img {
@@ -400,7 +420,8 @@
     margin: 0 auto;
     font-family: "OpenSans-Light";
     color: #000;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px;
 }
 }
