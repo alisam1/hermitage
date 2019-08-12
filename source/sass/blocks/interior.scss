@@ -1,6 +1,7 @@
 .interior__img{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     &--hadid
     {
       margin-bottom: 100px;
@@ -10,8 +11,14 @@
 
 .interior__img img
 {
-  width: 550px;
+  width: 520px;
   height: 500px;
+  box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
+}
+
+.interior__img img:nth-child(1)
+{
+  margin-right: 30px;
 }
 
 .stairs__img{
@@ -26,6 +33,14 @@
 .stairs__img img {
   width: 300px;
   height: 300px;
+  box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
+}
+
+
+.stairs__img img:hover
+{
+  box-shadow: 0px 0px 50px 11px rgba(64, 64, 64, 0.53);
+  cursor: pointer;
 }
 
 .selfie__img
@@ -41,7 +56,14 @@
 .selfie__img img {
   width: 320px;
   height: 320px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
+}
+
+.selfie__img img:hover
+{
+  cursor: pointer;
+  box-shadow: 0px 0px 50px 11px rgba(64, 64, 64, 0.53);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {

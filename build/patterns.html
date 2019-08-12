@@ -32,7 +32,7 @@
      <div class="colors">
        <div class="container">
           <div class="colors__title">Цветовые паттерны</div>
-          <div class="colors__description">Используя инструменты лаборатории культурной аналитики <a href="http://lab.culturalanalytics.info/">Cultural Analytics Lab</a>, мы распределили фотографии по их основному цвету. Большинство фотографий, сделанных в Эрмитаже, оказались красно-желтых и серо-зеленых оттенков. </div>
+          <div class="colors__description">Используя инструменты <a href="http://lab.culturalanalytics.info/">Cultural Analytics Lab</a>, мы распределили фотографии по их основному цвету. Большинство фотографий об Эрмитаже оказались красно-желтых и серо-зеленых оттенков.</div>
       <div class="colors__img">
         <div id="ex3" class="zoom">
           <img src="img/brightness.jpg" alt="">
@@ -47,9 +47,9 @@
         </div>
 
         <div class="colors__img colors__img--patterns">
-          <img src="img/blue_pat.jpg" alt="">
-          <img src="img/red_pat.jpg" alt="">
-          <img src="img/green_pat.jpg" alt="">
+          <img class="test-popup-link" href="img/blue_pat.jpg" src="img/blue_pat.jpg" alt="">
+          <img class="test-popup-link" href="img/red_pat.jpg" src="img/red_pat.jpg" alt="">
+          <img class="test-popup-link" href="img/green_pat.jpg" src="img/green_pat.jpg" alt="">
         </div>
 
         <div class="colors__all">
@@ -75,7 +75,7 @@
 
      <div class="content container">
        <div class="content__title">Динамика публикации фотографий</div>
-       <div class="content__description">Посещение музея мало подвержено сезонным изменениям и фотографии публикуются круглый год. Небольшое преимущество осенне-летнего сезона мы связываме со временем опусков и наплывом туристов. Самое популярное время для публикации фотографий о посещении музея - это обеденное и вечернее время.</div>
+       <div class="content__description">Посещение музея мало подвержено сезонным изменениям и фотографии публикуются круглый год. Небольшое преимущество осенне-летнего сезона мы связываем со временем отпусков и наплывом туристов. Самое популярное время для публикации фотографий - это обеденное и вечернее время.</div>
        <div class="content__img content__img--dinamic">
          <img src="img/dynamics_rus.jpg" alt="">
          <img src="img/rus_seasons.jpg" alt="">
@@ -146,6 +146,7 @@
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="js/magnific-popup.js"></script>
    	<script src="js/jquery.zoom.js"></script>
   <script src="js/zoom.js"></script>
    	<script>
@@ -155,6 +156,10 @@
    			$('#ex3').zoom({ on:'click' });
    			$('#ex4').zoom({ on:'toggle' });
    		});
+
+      $('.test-popup-link').magnificPopup({
+      type: 'image'
+    });
    	</script>
   </body>
 </html>
