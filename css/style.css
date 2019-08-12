@@ -1223,22 +1223,29 @@ template {
 
 .art__img img {
   width: 100%;
-  padding-bottom: 20px; }
+  margin-bottom: 20px; }
 
 .art__img--art img {
   width: 370px;
   height: auto;
-  padding-bottom: 20px; }
+  margin-bottom: 20px; }
 
 .art__img--people img {
   width: 500px;
   height: auto;
-  padding-bottom: 20px; }
+  -webkit-box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
+          box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
+  margin-bottom: 20px; }
+
+.art__img--people img:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 50px 11px rgba(64, 64, 64, 0.53);
+          box-shadow: 0px 0px 50px 11px rgba(64, 64, 64, 0.53); }
 
 .art__img--city img {
   width: 560px;
   height: auto;
-  padding-bottom: 20px; }
+  margin-bottom: 20px; }
 
 .left {
   width: 35%;
@@ -1574,13 +1581,21 @@ template {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .interior__img--hadid {
     margin-bottom: 100px; }
 
 .interior__img img {
-  width: 550px;
-  height: 500px; }
+  width: 520px;
+  height: 500px;
+  -webkit-box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
+          box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22); }
+
+.interior__img img:nth-child(1) {
+  margin-right: 30px; }
 
 .stairs__img {
   width: 95%;
@@ -1599,7 +1614,14 @@ template {
 
 .stairs__img img {
   width: 300px;
-  height: 300px; }
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
+          box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22); }
+
+.stairs__img img:hover {
+  -webkit-box-shadow: 0px 0px 50px 11px rgba(64, 64, 64, 0.53);
+          box-shadow: 0px 0px 50px 11px rgba(64, 64, 64, 0.53);
+  cursor: pointer; }
 
 .selfie__img {
   width: 95%;
@@ -1620,7 +1642,14 @@ template {
 .selfie__img img {
   width: 320px;
   height: 320px;
-  padding-bottom: 20px; }
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
+          box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22); }
+
+.selfie__img img:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 50px 11px rgba(64, 64, 64, 0.53);
+          box-shadow: 0px 0px 50px 11px rgba(64, 64, 64, 0.53); }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .interior__img {
