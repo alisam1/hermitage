@@ -143,6 +143,23 @@
     margin: 0 auto;
   }
 
+  .interior__img img:nth-child(1) {
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.lest__img
+{
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.lest__img img
+{
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
   .stairs__img
   {
     flex-direction: column;

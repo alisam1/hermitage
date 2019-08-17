@@ -1804,6 +1804,18 @@ template {
     width: 80%;
     height: auto;
     margin: 0 auto; }
+  .interior__img img:nth-child(1) {
+    margin-right: auto;
+    margin-bottom: 20px; }
+  .lest__img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto; }
+  .lest__img img {
+    margin: 0 auto;
+    margin-bottom: 20px; }
   .stairs__img {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2223,7 +2235,9 @@ img.mfp-img {
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  width: 90%;
+  margin: 0 auto; }
 
 .main-footer__info {
   font-family: "OpenSans";
@@ -2264,8 +2278,9 @@ img.mfp-img {
   display: -ms-flexbox;
   display: flex;
   width: 60%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .footer__list {
   display: -webkit-box;
@@ -2275,22 +2290,25 @@ img.mfp-img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin: 0; }
 
+.footer__list:nth-child(1) {
+  margin-right: 100px; }
+
 .footer__item {
   padding-bottom: 20px; }
 
 .footer__item a {
   font-family: "OpenSans";
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 26px;
   color: #fff;
   text-decoration: none; }
 
@@ -2302,9 +2320,9 @@ img.mfp-img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
