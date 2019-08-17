@@ -7,17 +7,44 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
    <header class="main-header">
-     <nav class="menu">
-       <ul class="menu__list">
-         <li class="menu__item"><a href="./">Главная</a></li>
-         <li class="menu__item"><a href="./patterns.html">Паттерны</a></li>
-         <li class="menu__item"><a href="./interior.html">Интерьеры</a></li>
-         <li class="menu__item"><a href="./art.html">Искусство</a></li>
-         <li class="menu__item"><a href="#">Посетители</a></li>
-         <li class="menu__item"><a href="./city.html">Музей и Город</a></li>
-       </ul>
-     </nav>
+     <div class="main-header__desktop">
+       <nav class="menu">
+         <ul class="menu__list">
+           <li class="menu__item"><a href="./">Главная</a></li>
+           <li class="menu__item"><a href="./patterns.html">Паттерны</a></li>
+           <li class="menu__item"><a href="./interior.html">Интерьеры</a></li>
+           <li class="menu__item"><a href="./art.html">Искусство</a></li>
+           <li class="menu__item"><a href="#">Посетители</a></li>
+           <li class="menu__item"><a href="./city.html">Музей и Город</a></li>
+         </ul>
+       </nav>
+
+     </div>
+
+
+     <div class="main-header__mobile">
+
+           <button class="open-menu"><img src="img/mobile_open.svg" alt=""></button>
+
+           <div class="menu_mobile">
+
+           <button class="close-menu"><img src="img/close_menu.svg" alt=""></button>
+
+           <nav class="menu">
+             <ul class="menu__list">
+               <li class="menu__item"><a href="./">Главная</a></li>
+               <li class="menu__item"><a href="./patterns.html">Паттерны</a></li>
+               <li class="menu__item"><a href="./interior.html">Интерьеры</a></li>
+               <li class="menu__item"><a href="./art.html">Искусство</a></li>
+               <li class="menu__item"><a href="#">Посетители</a></li>
+               <li class="menu__item"><a href="./city.html">Музей и Город</a></li>
+             </ul>
+           </nav>
+         </div>
+
+      </div>
    </header>
 
    <main class="main">
@@ -112,6 +139,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
    <script src="js/magnific-popup.js"></script>
+   <script src="js/main.js"></script>
    <script>
       $('.test-popup-link').magnificPopup({
       type: 'image'
