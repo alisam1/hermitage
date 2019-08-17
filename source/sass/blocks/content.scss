@@ -10,8 +10,12 @@
   line-height: 68px;
   text-align: center;
   color: #000;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 60px;
+  &--geo
+  {
+    margin-top: -40px;
+  }
 }
 
 .content__description
@@ -37,6 +41,11 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+.content__img--dinamic
+{
+  margin-bottom: -40px;
 }
 
 
@@ -65,6 +74,11 @@
   padding-bottom: 20px;
 }
 
+.content__img--plots
+{
+  margin-bottom: 70px;
+}
+
 .content__info
 {
     width: 80%;
@@ -76,10 +90,16 @@
     padding-bottom: 30px;
 }
 
+.content__info--art
+{
+  margin-top: -20px;
+}
+
 .content__info span
 {
   font-family: $font-family-bold;
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
 }

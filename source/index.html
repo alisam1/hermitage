@@ -24,7 +24,8 @@
      <div class="top-content">
       <div class="all__content">
        <div class="container">
-         <h1 class="top-content__title">#Другой музей</h1>
+         <div id="trigger8"></div>
+         <h1 id="reveal8"  class="top-content__title">#Другой музей</h1>
          </div>
        </div>
      </div>
@@ -196,7 +197,7 @@
         </ul>
         </ul>
       </div>
-      
+
      </div>
      </div>
    </footer>
@@ -235,5 +236,14 @@
           })
           .setClassToggle("#reveal3", "visible") // add class toggle
           .addTo(controller);
+
+  new ScrollMagic.Scene({
+          triggerElement: "#trigger8",
+          triggerHook: 0.9,
+          offset: 50, // move trigger to center of element
+          reverse: true // only do once
+          })
+         .setClassToggle("#reveal8", "visible") // add class toggle
+         .addTo(controller);
 </script>
 </html>

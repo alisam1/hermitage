@@ -6,7 +6,7 @@
   text-align: center;
   color: #000;
   margin-top: 50px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .colors__description
@@ -18,7 +18,7 @@
   font-size: 20px;
   line-height: 30px;
   text-align: left;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .colors__description a
@@ -144,8 +144,20 @@
 
 .colors__all
 {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 30px;
+  &--red
+  {
+    margin-top: 70px;
+  }
+  &--dance
+  {
+    margin-top: 70px;
+  }
+  &--people
+  {
+    margin-top: 40px;
+  }
 }
 
 .colors__info
@@ -157,6 +169,19 @@
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 30px;
+    &--art
+    {
+      margin-top: -20px;
+    }
+    &--people
+    {
+      margin-top: -30px;
+    }
+}
+
+.colors__info span
+{
+  font-family: $font-family;
 }
 
 .left-block
@@ -199,7 +224,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
   margin-bottom: 70px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .quote__attention
