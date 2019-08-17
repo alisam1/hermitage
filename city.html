@@ -40,7 +40,8 @@
        </div>
 
       <div class="art__img">
-          <div class="people__img"><img src="img/palace2.jpg" alt=""></div>
+        <div id="trigger13"></div>
+        <div id="reveal13" class="people__img"><img src="img/palace2.jpg" alt=""></div>
       </div>
 
         <div class="colors__all">
@@ -67,7 +68,8 @@
         <div class="colors__all">
          <div class="colors__info colors__info--art">Миллионная улица и Атланты - одно из любимых мест для снимков, что неудивительно: они давно стали символом музея и это одна из скульптур, которую можно трогать. Чаще всего посетители музея касаются лишь ног атлантов, что достаточно для передачи сообщения о посещении места.</div>
         </div>
-        <div class="selfie__img">
+        <div id="trigger14"></div>
+        <div id="reveal14" class="selfie__img">
           <img class="test-popup-link" href="img/atl1.jpg" src="img/atl1.jpg" alt="">
           <img class="test-popup-link" href="img/atl2.jpg" src="img/atl2.jpg" alt="">
           <img class="test-popup-link" href="img/atl3.jpg" src="img/atl3.jpg" alt="">
@@ -140,11 +142,30 @@
 
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script>
       $('.test-popup-link').magnificPopup({
       type: 'image'
     });
+
+    var controller = new ScrollMagic.Controller();
+     new ScrollMagic.Scene({
+            triggerElement: "#trigger13",
+              triggerHook: 0.7,
+              offset: 50, // move trigger to center of element
+              reverse: true // only do once
+            })
+            .setClassToggle("#reveal13", "visible") // add class toggle
+            .addTo(controller);
+     new ScrollMagic.Scene({
+            triggerElement: "#trigger14",
+            triggerHook: 0.7,
+            offset: 50, // move trigger to center of element
+            reverse: true // only do once
+            })
+            .setClassToggle("#reveal14", "visible") // add class toggle
+            .addTo(controller);
    </script>
   </body>
 </html>
