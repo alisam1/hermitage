@@ -31,10 +31,11 @@
 
      <div class="container">
        <div class="colors__all">
-        <div class="colors__info">Не смотря на большое количество снимков произведений искусства, цель этих фотографий - не документировать все увиденные шедевры, а рассказать о них в контексте посещения музея. Особенно распространены коллажи - подборки из нескольких наиболее запомнившихся экспонатов музея, собранных в одном кадре.</div>
+        <div class="colors__info">Несмотря на большое количество снимков произведений искусства, цель этих фотографий - не документировать все увиденные шедевры, а рассказать о них в контексте посещения музея. Особенно распространены коллажи - подборки из нескольких наиболее запомнившихся экспонатов музея, собранных в одном кадре.</div>
        </div>
 
-      <div class="art__img art__img--art">
+      <div id="trigger9"></div>
+      <div id="reveal9" class="art__img art__img--art">
           <img  class="test-popup-link" href="img/art1.jpg" src="img/art1.jpg" alt="">
           <img  class="test-popup-link" href="img/art2.jpg" src="img/art2.jpg" alt="">
           <img  class="test-popup-link" href="img/art3.jpg" src="img/art3.jpg" alt="">
@@ -54,7 +55,8 @@
         <div class="colors__all">
          <div class="colors__info colors__info--art">В тройку самых популярных живописных произведений Эрмитажа входят "Мадонна Литта", которая давно считается неформальным символом музея, «Черный квадрат» Казимира Малевича и «Танец» и "Музыка" Анри Матисса. Популярность первых двух экспонатов можно объяснить тем, что они наиболее узнаваемы среди всей коллекции.  </div>
         </div>
-        <div class="stairs__img">
+        <div id="trigger10"></div>
+        <div id="reveal10" class="stairs__img">
           <img class="test-popup-link" href="img/Litta.jpg" src="img/Litta.jpg" alt="">
           <img class="test-popup-link" href="img/bf.jpg" src="img/bf.jpg" alt="">
           <img class="test-popup-link" href="img/matissonly.jpg" src="img/matissonly.jpg" alt="">
@@ -113,11 +115,32 @@
 
 
    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
    <script src='js/magnific-popup.js'></script>
    <script>
       $('.test-popup-link').magnificPopup({
       type: 'image'
     });
+
+    var controller = new ScrollMagic.Controller();
+     new ScrollMagic.Scene({
+            triggerElement: "#trigger9",
+              triggerHook: 0.7,
+              offset: 50, // move trigger to center of element
+              reverse: true // only do once
+            })
+            .setClassToggle("#reveal9", "visible") // add class toggle
+            .addTo(controller);
+
+    new ScrollMagic.Scene({
+            triggerElement: "#trigger10",
+            triggerHook: 0.9,
+            offset: 50, // move trigger to center of element
+            reverse: true // only do once
+            })
+            .setClassToggle("#reveal10", "visible") // add class toggle
+            .addTo(controller);
+
    </script>
   </body>
 </html>

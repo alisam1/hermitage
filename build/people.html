@@ -45,7 +45,8 @@
          <div class="colors__info">На первый вгляд кажется, что фотографии, где люди нарочито не смотрят в камеру, отличаются от привычного позирования. Посетители заменяют его на задумчивый взгляд в сторону или увлеченное рассматривание экспоната. Чтобы уйти от традиционного позирования, посетители Эрмитажа копировали проект "Follow Me", где смотрящему предлагают пройтись по наиболее известным залам и галереям и погрузиться в пространство Эрмитажа.</div>
          <div class="colors__info">Эти сюжеты можно отнести к вариации туристического канона, следование которому авторы Instagram-снимков, вероятно, считают отсутствием вкуса.</div>
         </div>
-        <div class="art__img">
+        <div id="trigger11"></div>
+        <div id="reveal11" class="art__img">
           <img src="img/nonposing2.jpg" alt="">
         </div>
         <div class="colors__all">
@@ -62,7 +63,8 @@
         <div class="colors__all">
          <div class="colors__info colors__info--art">Популярны также "альтернативные селфи": фотографии рук, ног, входных билетов или карты Эрмитажа в руках у посетителя и предметов на фоне Эрмитажного убранства. Любопытно появление фотографий со стаканчиками кофе в руках, которые транслируют круг потребительских практик, в который включено посещение Эрмитажа. Наиболее популярными стали стаканчики сети кофеен, чья бело-зеленая гамма оформления обыгрывается на фоне бело-зеленого фасада Зимнего Дворца.</div>
         </div>
-        <div class="selfie__img">
+        <div id="trigger12"></div>
+        <div id="reveal12" class="selfie__img">
           <img class="test-popup-link" href="img/alternative1.jpg" src="img/alternative1.jpg" alt="">
           <img class="test-popup-link" href="img/alternative2.jpg" src="img/alternative2.jpg" alt="">
           <img class="test-popup-link" href="img/alternative3.jpg" src="img/alternative3.jpg" alt="">
@@ -115,11 +117,30 @@
 
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script>
       $('.test-popup-link').magnificPopup({
       type: 'image'
     });
+
+    var controller = new ScrollMagic.Controller();
+     new ScrollMagic.Scene({
+            triggerElement: "#trigger11",
+              triggerHook: 0.7,
+              offset: 50, // move trigger to center of element
+              reverse: true // only do once
+            })
+            .setClassToggle("#reveal11", "visible") // add class toggle
+            .addTo(controller);
+     new ScrollMagic.Scene({
+            triggerElement: "#trigger12",
+            triggerHook: 0.7,
+            offset: 50, // move trigger to center of element
+            reverse: true // only do once
+            })
+            .setClassToggle("#reveal12", "visible") // add class toggle
+            .addTo(controller);
    </script>
   </body>
 </html>

@@ -398,7 +398,7 @@ template {
     margin: 0 auto;
     margin-top: 25px; } }
 
-#reveal1, #reveal2, #reveal3, #reveal4, #reveal5, #reveal6, #reveal7, #reveal8 {
+#reveal1, #reveal2, #reveal3, #reveal4, #reveal5, #reveal6, #reveal7, #reveal8, #reveal9, #reveal10, #reveal11, #reveal12, #reveal13, #reveal14 {
   opacity: 0;
   opacity: 0;
   -webkit-transform: scale(0.9);
@@ -442,6 +442,36 @@ template {
   transform: none; }
 
 #reveal8.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none; }
+
+#reveal9.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none; }
+
+#reveal10.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none; }
+
+#reveal11.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none; }
+
+#reveal12.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none; }
+
+#reveal13.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none; }
+
+#reveal14.visible {
   opacity: 1;
   -webkit-transform: none;
   transform: none; }
