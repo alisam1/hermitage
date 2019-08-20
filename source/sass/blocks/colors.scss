@@ -356,7 +356,17 @@
     font-size: 16px;
     line-height: 26px;
     padding-bottom: 20px;
+    &--art 
+    {
+      margin-top: 0;
+    }
+    &--people
+    {
+      margin-top: 0;
+    }
   }
+
+
   .colors__img
   {
     width: 90%;
